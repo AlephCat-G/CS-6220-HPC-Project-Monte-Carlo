@@ -15,13 +15,17 @@ int main(int argc, char** argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
     if (rank == 0) {
-        std::cout << "Enter the number of points: ";
-        std::cin >> n;
-        if (std::cin.fail()) {
-            std::cerr << "Error: Invalid input. Please enter a valid integer number.\n";
-            MPI_Abort(MPI_COMM_WORLD, 1);
+        if (argc == 2) {
+            n = atoll(argv[1]);
+        } else {
+            std::cout << "Enter the number of points: ";
+            std::cin >> n;
+            if (std::cin.fail()) {
+                std::cerr << "Error: Invalid input. Please enter a valid integer number.\n";
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                exit(1);
+            }
         }
-        start_time = MPI_Wtime();
     }
 
     MPI_Bcast(&n, 1, MPI_LONG_LONG_INT, 0, MPI_COMM_WORLD);
