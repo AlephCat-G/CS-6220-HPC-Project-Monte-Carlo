@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <mpi.h>
 #include <time.h>
+#include <iostream>
 
 int main(int argc, char** argv) {
     int rank, size;
@@ -14,11 +15,12 @@ int main(int argc, char** argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
     if (rank == 0) {
-        if (argc != 2) {
-            fprintf(stderr, "Usage: %s number_of_points\n", argv[0]);
+        std::cout << "Enter the number of points: ";
+        std::cin >> n;
+        if (std::cin.fail()) {
+            std::cerr << "Error: Invalid input. Please enter a valid integer number.\n";
             MPI_Abort(MPI_COMM_WORLD, 1);
         }
-        n = atoll(argv[1]);
         start_time = MPI_Wtime();
     }
 

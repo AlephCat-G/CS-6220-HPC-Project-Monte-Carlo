@@ -68,7 +68,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/usr/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
