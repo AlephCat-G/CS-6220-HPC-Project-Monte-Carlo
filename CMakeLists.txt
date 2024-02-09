@@ -3,10 +3,10 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# 查找 OpenMP
+
 find_package(OpenMP REQUIRED)
 if(OpenMP_CXX_FOUND)
-    # 添加 OpenMP 编译器和链接器标志
+
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
