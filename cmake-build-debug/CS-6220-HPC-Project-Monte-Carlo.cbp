@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CS-6220-HPC-Project-Monte-Carlo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="monte_carlo_pi">
+				<Option output="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/monte_carlo_pi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/Cellar/mpich/4.1.2/include"/>
+					<Add directory="/opt/homebrew/opt/llvm/bin/../include/c++/v1"/>
+					<Add directory="/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 monte_carlo_pi"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="monte_carlo_pi/fast">
+				<Option output="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/monte_carlo_pi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/Cellar/mpich/4.1.2/include"/>
+					<Add directory="/opt/homebrew/opt/llvm/bin/../include/c++/v1"/>
+					<Add directory="/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 monte_carlo_pi/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/pi_calc.cpp">
+			<Option target="monte_carlo_pi"/>
+		</Unit>
+		<Unit filename="/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
