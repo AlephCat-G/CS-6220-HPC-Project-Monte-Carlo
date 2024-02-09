@@ -1,4 +1,5 @@
 ## A C++ parallel program using MPI to achieve Monte-Carlo simulation of &pi; value
+### CS 6220 Course Project, co-contributors: Yunxiang Yan, Qidian Gao, Buwei Tang
 ### Core highlights:
 1. We accept configuation input of n value (the total points used to simulate &pi;) as well as interactive commands upon terminal.
 2. We calculated the run-time with different number of processors from 1~10 locally with Macbook Air M2 8+16+10, and for n = 106
