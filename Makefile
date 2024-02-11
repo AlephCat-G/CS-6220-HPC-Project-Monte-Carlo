@@ -2,7 +2,7 @@ CXX=mpic++
 
 CXXFLAGS=-Wall -std=c++11
 
-TARGET=monte_carlo_pi
+TARGET=pi_calc
 
 SOURCES=pi_calc.cpp
 
