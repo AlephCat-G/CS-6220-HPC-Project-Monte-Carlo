@@ -2,7 +2,7 @@
 ### CS 6220 Course Project, co-contributors: Yunxiang Yan, Qidian Gao, Biwei Tang
 ### Core highlights:
 1. We accept configuation input of n value (the total points used to simulate &pi;) as well as interactive commands upon terminal.
-2. We calculated the run-time with different number of processors, and for n = 106, we plot a graph of run-time of the program vs. the number of processors for a few chosen values of p.
+2. We calculated the run-time with different number of processors, and for n = 10^6, we plot a graph of run-time of the program vs. the number of processors for a few chosen values of p.
 
 ### Code logic: 
 
