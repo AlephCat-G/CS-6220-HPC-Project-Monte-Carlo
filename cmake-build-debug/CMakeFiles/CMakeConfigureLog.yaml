@@ -13,28 +13,6 @@ events:
     backtrace:
       - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /opt/homebrew/opt/llvm/bin/clang 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-      
-      The C compiler identification is Clang, found in:
-        /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.out
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
@@ -56,113 +34,13 @@ events:
     kind: "try_compile-v1"
     backtrace:
       - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hNmtXv"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hNmtXv"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hNmtXv'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_79b75/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_79b75.dir/build.make CMakeFiles/cmTC_79b75.dir/build
-        Building C object CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o
-        /opt/homebrew/opt/llvm/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics   -v -Wl,-v -MD -MT CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
-        Homebrew clang version 17.0.6
-        Target: arm64-apple-darwin23.3.0
-        Thread model: posix
-        InstalledDir: /opt/homebrew/opt/llvm/bin
-        clang: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m
-         (in-process)
-         "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hNmtXv -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hNmtXv -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -x c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
-        clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        Linking C executable cmTC_79b75
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79b75.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -o cmTC_79b75 
-        Homebrew clang version 17.0.6
-        Target: arm64-apple-darwin23.3.0
-        Thread model: posix
-        InstalledDir: /opt/homebrew/opt/llvm/bin
-         "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_79b75 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
-        BUILD 13:21:42 Nov 10 2023
-        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
-        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 17.0.6 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
-        Library search paths:
-        Framework search paths:
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=loading
-        found start of include info
-        warn: unable to parse implicit include dirs!
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hNmtXv']
-        ignore line: []
-        ignore line: [Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_79b75/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_79b75.dir/build.make CMakeFiles/cmTC_79b75.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/opt/homebrew/opt/llvm/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics   -v -Wl -v -MD -MT CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
-        ignore line: [Homebrew clang version 17.0.6]
-        ignore line: [Target: arm64-apple-darwin23.3.0]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /opt/homebrew/opt/llvm/bin]
-        ignore line: [clang: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m; (in-process); "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hNmtXv -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hNmtXv -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -x c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c;clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0;ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include";ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks";#include "..." search starts here:;#include <...> search starts here:; /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include; /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include; /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory);End of search list.;Linking C executable cmTC_79b75;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79b75.dir/link.txt --verbose=1;/opt/homebrew/opt/llvm/bin/clang  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -o cmTC_79b75 ;Homebrew clang version 17.0.6;Target: arm64-apple-darwin23.3.0;Thread model: posix;InstalledDir: /opt/homebrew/opt/llvm/bin; "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_79b75 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_79b75.dir/CMakeCCompilerABI.c.o -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a;@(#)PROGRAM:ld  PROJECT:dyld-1022.1;BUILD 13:21:42 Nov 10 2023;configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h;will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em;LTO support using: LLVM version 17.0.6 (static support for 29, runtime is 29);TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8);Library search paths:;Framework search paths:;;]
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
       - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-X9sz4X"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-X9sz4X"
+      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2tR541"
+      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2tR541"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -174,19 +52,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-X9sz4X'
+        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2tR541'
         
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb942/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fb942.dir/build.make CMakeFiles/cmTC_fb942.dir/build
-        Building CXX object CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics   -v -Wl,-v -MD -MT CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_62db9/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_62db9.dir/build.make CMakeFiles/cmTC_62db9.dir/build
+        Building CXX object CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/homebrew/opt/llvm/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics   -v -Wl,-v -MD -MT CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         Homebrew clang version 17.0.6
         Target: arm64-apple-darwin23.3.0
         Thread model: posix
         InstalledDir: /opt/homebrew/opt/llvm/bin
         clang++: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m
          (in-process)
-         "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-X9sz4X -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /opt/homebrew/opt/llvm/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-X9sz4X -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+         "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2tR541 -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /opt/homebrew/opt/llvm/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2tR541 -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"
@@ -197,14 +75,14 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_fb942
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb942.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fb942 
+        Linking CXX executable cmTC_62db9
+        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62db9.dir/link.txt --verbose=1
+        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_62db9 
         Homebrew clang version 17.0.6
         Target: arm64-apple-darwin23.3.0
         Thread model: posix
         InstalledDir: /opt/homebrew/opt/llvm/bin
-         "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_fb942 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_62db9 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld  PROJECT:dyld-1022.1
         BUILD 13:21:42 Nov 10 2023
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
@@ -236,17 +114,17 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-X9sz4X']
+        ignore line: [Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2tR541']
         ignore line: []
-        ignore line: [Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb942/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fb942.dir/build.make CMakeFiles/cmTC_fb942.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/opt/homebrew/opt/llvm/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics   -v -Wl -v -MD -MT CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_62db9/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_62db9.dir/build.make CMakeFiles/cmTC_62db9.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/homebrew/opt/llvm/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics   -v -Wl -v -MD -MT CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Homebrew clang version 17.0.6]
         ignore line: [Target: arm64-apple-darwin23.3.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/homebrew/opt/llvm/bin]
-        ignore line: [clang++: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m; (in-process); "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-X9sz4X -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /opt/homebrew/opt/llvm/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-X9sz4X -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp;clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0;ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include";ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks";#include "..." search starts here:;#include <...> search starts here:; /opt/homebrew/opt/llvm/bin/../include/c++/v1; /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include; /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include; /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory);End of search list.;Linking CXX executable cmTC_fb942;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb942.dir/link.txt --verbose=1;/opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fb942 ;Homebrew clang version 17.0.6;Target: arm64-apple-darwin23.3.0;Thread model: posix;InstalledDir: /opt/homebrew/opt/llvm/bin; "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_fb942 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_fb942.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a;@(#)PROGRAM:ld  PROJECT:dyld-1022.1;BUILD 13:21:42 Nov 10 2023;configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h;will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em;LTO support using: LLVM version 17.0.6 (static support for 29, runtime is 29);TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8);Library search paths:;Framework search paths:;;]
+        ignore line: [clang++: \x1b[0;1;35mwarning: \x1b[0m\x1b[1m-Wl,-v: 'linker' input unused [-Wunused-command-line-argument]\x1b[0m; (in-process); "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2tR541 -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /opt/homebrew/opt/llvm/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2tR541 -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp;clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0;ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include";ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks";#include "..." search starts here:;#include <...> search starts here:; /opt/homebrew/opt/llvm/bin/../include/c++/v1; /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include; /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include; /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory);End of search list.;Linking CXX executable cmTC_62db9;/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62db9.dir/link.txt --verbose=1;/opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_62db9 ;Homebrew clang version 17.0.6;Target: arm64-apple-darwin23.3.0;Thread model: posix;InstalledDir: /opt/homebrew/opt/llvm/bin; "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_62db9 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_62db9.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a;@(#)PROGRAM:ld  PROJECT:dyld-1022.1;BUILD 13:21:42 Nov 10 2023;configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h;will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em;LTO support using: LLVM version 17.0.6 (static support for 29, runtime is 29);TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8);Library search paths:;Framework search paths:;;]
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -256,824 +134,14 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:7 (find_package)"
-    description: "Detecting C OpenMP compiler info"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_C_fopenmplibomp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_52626/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_52626.dir/build.make CMakeFiles/cmTC_52626.dir/build
-        Building C object CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o
-        /opt/homebrew/opt/llvm/bin/clang   -fopenmp=libomp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0/OpenMPTryFlag.c
-        Homebrew clang version 17.0.6
-        Target: arm64-apple-darwin23.3.0
-        Thread model: posix
-        InstalledDir: /opt/homebrew/opt/llvm/bin
-         (in-process)
-         "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0 -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0 -ferror-limit 19 -fopenmp -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -x c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0/OpenMPTryFlag.c
-        clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        Linking C executable cmTC_52626
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52626.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang  -fopenmp=libomp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -o cmTC_52626  -v -Wl,-v 
-        Homebrew clang version 17.0.6
-        Target: arm64-apple-darwin23.3.0
-        Thread model: posix
-        InstalledDir: /opt/homebrew/opt/llvm/bin
-         "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_52626 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -v -lomp -L/opt/homebrew/Cellar/llvm/17.0.6_1/lib -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
-        BUILD 13:21:42 Nov 10 2023
-        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
-        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 17.0.6 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
-        Library search paths:
-        	/opt/homebrew/Cellar/llvm/17.0.6_1/lib
-        Framework search paths:
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:7 (find_package)"
-    message: |
-      Parsed C OpenMP implicit link information from above output:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0']
-        ignore line: []
-        ignore line: [Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_52626/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_52626.dir/build.make CMakeFiles/cmTC_52626.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o]
-        ignore line: [/opt/homebrew/opt/llvm/bin/clang   -fopenmp=libomp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0/OpenMPTryFlag.c]
-        ignore line: [Homebrew clang version 17.0.6]
-        ignore line: [Target: arm64-apple-darwin23.3.0]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /opt/homebrew/opt/llvm/bin]
-        ignore line: [ (in-process)]
-        ignore line: [ "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0 -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0 -ferror-limit 19 -fopenmp -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -x c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sAFYa0/OpenMPTryFlag.c]
-        ignore line: [clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)]
-        ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_52626]
-        ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52626.dir/link.txt --verbose=1]
-        ignore line: [/opt/homebrew/opt/llvm/bin/clang  -fopenmp=libomp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -o cmTC_52626  -v -Wl -v ]
-        ignore line: [Homebrew clang version 17.0.6]
-        ignore line: [Target: arm64-apple-darwin23.3.0]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /opt/homebrew/opt/llvm/bin]
-        link line: [ "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_52626 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o -v -lomp -L/opt/homebrew/Cellar/llvm/17.0.6_1/lib -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-          arg [/usr/bin/ld] ==> ignore
-          arg [-demangle] ==> ignore
-          arg [-lto_library] ==> ignore, skip following value
-          arg [/opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib] ==> skip value of -lto_library
-          arg [-dynamic] ==> ignore
-          arg [-arch] ==> ignore
-          arg [arm64] ==> ignore
-          arg [-platform_version] ==> ignore
-          arg [macos] ==> ignore
-          arg [14.0.0] ==> ignore
-          arg [14.2] ==> ignore
-          arg [-syslibroot] ==> ignore
-          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_52626] ==> ignore
-          arg [-search_paths_first] ==> ignore
-          arg [-headerpad_max_install_names] ==> ignore
-          arg [CMakeFiles/cmTC_52626.dir/OpenMPTryFlag.c.o] ==> ignore
-          arg [-v] ==> ignore
-          arg [-lomp] ==> lib [omp]
-          arg [-L/opt/homebrew/Cellar/llvm/17.0.6_1/lib] ==> dir [/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-          arg [-lSystem] ==> lib [System]
-          arg [/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-        Library search paths: [;/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-        remove lib [System]
-        remove lib [/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-        collapse library dir [/opt/homebrew/Cellar/llvm/17.0.6_1/lib] ==> [/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-        collapse library dir [/opt/homebrew/Cellar/llvm/17.0.6_1/lib] ==> [/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-        implicit libs: [omp]
-        implicit objs: []
-        implicit dirs: [/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:7 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_04c0e/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_04c0e.dir/build.make CMakeFiles/cmTC_04c0e.dir/build
-        Building CXX object CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++   -fopenmp=libomp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj/OpenMPTryFlag.cpp
-        Homebrew clang version 17.0.6
-        Target: arm64-apple-darwin23.3.0
-        Thread model: posix
-        InstalledDir: /opt/homebrew/opt/llvm/bin
-         (in-process)
-         "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /opt/homebrew/opt/llvm/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj -ferror-limit 19 -fopenmp -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -x c++ /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj/OpenMPTryFlag.cpp
-        clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /opt/homebrew/opt/llvm/bin/../include/c++/v1
-         /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        Linking CXX executable cmTC_04c0e
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04c0e.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -o cmTC_04c0e  -v -Wl,-v 
-        Homebrew clang version 17.0.6
-        Target: arm64-apple-darwin23.3.0
-        Thread model: posix
-        InstalledDir: /opt/homebrew/opt/llvm/bin
-         "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_04c0e -search_paths_first -headerpad_max_install_names CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -v -lomp -L/opt/homebrew/Cellar/llvm/17.0.6_1/lib -lc++ -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
-        BUILD 13:21:42 Nov 10 2023
-        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
-        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 17.0.6 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
-        Library search paths:
-        	/opt/homebrew/Cellar/llvm/17.0.6_1/lib
-        Framework search paths:
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:7 (find_package)"
-    message: |
-      Parsed CXX OpenMP implicit link information from above output:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj']
-        ignore line: []
-        ignore line: [Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_04c0e/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_04c0e.dir/build.make CMakeFiles/cmTC_04c0e.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o]
-        ignore line: [/opt/homebrew/opt/llvm/bin/clang++   -fopenmp=libomp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj/OpenMPTryFlag.cpp]
-        ignore line: [Homebrew clang version 17.0.6]
-        ignore line: [Target: arm64-apple-darwin23.3.0]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /opt/homebrew/opt/llvm/bin]
-        ignore line: [ (in-process)]
-        ignore line: [ "/opt/homebrew/Cellar/llvm/17.0.6_1/bin/clang-17" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj -resource-dir /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17 -dependency-file CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -internal-isystem /opt/homebrew/opt/llvm/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj -ferror-limit 19 -fopenmp -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcolor-diagnostics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -x c++ /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PoZYuj/OpenMPTryFlag.cpp]
-        ignore line: [clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target arm64-apple-darwin23.3.0]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /opt/homebrew/opt/llvm/bin/../include/c++/v1]
-        ignore line: [ /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
-        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)]
-        ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_04c0e]
-        ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04c0e.dir/link.txt --verbose=1]
-        ignore line: [/opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -o cmTC_04c0e  -v -Wl -v ]
-        ignore line: [Homebrew clang version 17.0.6]
-        ignore line: [Target: arm64-apple-darwin23.3.0]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /opt/homebrew/opt/llvm/bin]
-        link line: [ "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -o cmTC_04c0e -search_paths_first -headerpad_max_install_names CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o -v -lomp -L/opt/homebrew/Cellar/llvm/17.0.6_1/lib -lc++ -lSystem /opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-          arg [/usr/bin/ld] ==> ignore
-          arg [-demangle] ==> ignore
-          arg [-lto_library] ==> ignore, skip following value
-          arg [/opt/homebrew/Cellar/llvm/17.0.6_1/lib/libLTO.dylib] ==> skip value of -lto_library
-          arg [-dynamic] ==> ignore
-          arg [-arch] ==> ignore
-          arg [arm64] ==> ignore
-          arg [-platform_version] ==> ignore
-          arg [macos] ==> ignore
-          arg [14.0.0] ==> ignore
-          arg [14.2] ==> ignore
-          arg [-syslibroot] ==> ignore
-          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_04c0e] ==> ignore
-          arg [-search_paths_first] ==> ignore
-          arg [-headerpad_max_install_names] ==> ignore
-          arg [CMakeFiles/cmTC_04c0e.dir/OpenMPTryFlag.cpp.o] ==> ignore
-          arg [-v] ==> ignore
-          arg [-lomp] ==> lib [omp]
-          arg [-L/opt/homebrew/Cellar/llvm/17.0.6_1/lib] ==> dir [/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-          arg [-lc++] ==> lib [c++]
-          arg [-lSystem] ==> lib [System]
-          arg [/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-        Library search paths: [;/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-        remove lib [System]
-        remove lib [/opt/homebrew/Cellar/llvm/17.0.6_1/lib/clang/17/lib/darwin/libclang_rt.osx.a]
-        collapse library dir [/opt/homebrew/Cellar/llvm/17.0.6_1/lib] ==> [/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-        collapse library dir [/opt/homebrew/Cellar/llvm/17.0.6_1/lib] ==> [/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-        implicit libs: [omp;c++]
-        implicit objs: []
-        implicit dirs: [/opt/homebrew/Cellar/llvm/17.0.6_1/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:559 (_OPENMP_GET_SPEC_DATE)"
-      - "CMakeLists.txt:7 (find_package)"
-    description: "Detecting C OpenMP version"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZVaax3"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZVaax3"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "OpenMP_SPECTEST_C_"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZVaax3'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7edfd/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7edfd.dir/build.make CMakeFiles/cmTC_7edfd.dir/build
-        Building C object CMakeFiles/cmTC_7edfd.dir/OpenMPCheckVersion.c.o
-        /opt/homebrew/opt/llvm/bin/clang   -fopenmp=libomp -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7edfd.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_7edfd.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_7edfd.dir/OpenMPCheckVersion.c.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZVaax3/OpenMPCheckVersion.c
-        Linking C executable cmTC_7edfd
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7edfd.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang  -fopenmp=libomp -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7edfd.dir/OpenMPCheckVersion.c.o -o cmTC_7edfd 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindOpenMP.cmake:559 (_OPENMP_GET_SPEC_DATE)"
-      - "CMakeLists.txt:7 (find_package)"
-    description: "Detecting CXX OpenMP version"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-27Fedr"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-27Fedr"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "OpenMP_SPECTEST_CXX_"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-27Fedr'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_90aaf/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_90aaf.dir/build.make CMakeFiles/cmTC_90aaf.dir/build
-        Building CXX object CMakeFiles/cmTC_90aaf.dir/OpenMPCheckVersion.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++   -fopenmp=libomp -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_90aaf.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_90aaf.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_90aaf.dir/OpenMPCheckVersion.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-27Fedr/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_90aaf
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90aaf.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_90aaf.dir/OpenMPCheckVersion.cpp.o -o cmTC_90aaf 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for C in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ZyZHl"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ZyZHl"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -fopenmp=libomp"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_C_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ZyZHl'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7e418/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7e418.dir/build.make CMakeFiles/cmTC_7e418.dir/build
-        Building C object CMakeFiles/cmTC_7e418.dir/test_mpi.c.o
-        /opt/homebrew/opt/llvm/bin/clang  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7e418.dir/test_mpi.c.o -MF CMakeFiles/cmTC_7e418.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_7e418.dir/test_mpi.c.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6ZyZHl/test_mpi.c
-        Linking C executable cmTC_7e418
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e418.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7e418.dir/test_mpi.c.o -o cmTC_7e418  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pQhsKh"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pQhsKh"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: " -fopenmp=libomp"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pQhsKh'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98d40/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_98d40.dir/build.make CMakeFiles/cmTC_98d40.dir/build
-        Building CXX object CMakeFiles/cmTC_98d40.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_98d40.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_98d40.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_98d40.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pQhsKh/test_mpi.cpp
-        Linking CXX executable cmTC_98d40
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98d40.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_98d40.dir/test_mpi.cpp.o -o cmTC_98d40  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode MPICXX"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uoEbXS"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uoEbXS"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: " -fopenmp=libomp"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uoEbXS'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b9672/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b9672.dir/build.make CMakeFiles/cmTC_b9672.dir/build
-        Building CXX object CMakeFiles/cmTC_b9672.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b9672.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_b9672.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_b9672.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uoEbXS/test_mpi.cpp
-        Linking CXX executable cmTC_b9672
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9672.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b9672.dir/test_mpi.cpp.o -o cmTC_b9672  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for C in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8bSN2F"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8bSN2F"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -fopenmp=libomp"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_C_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8bSN2F'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_06496/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_06496.dir/build.make CMakeFiles/cmTC_06496.dir/build
-        Building C object CMakeFiles/cmTC_06496.dir/test_mpi.c.o
-        /opt/homebrew/opt/llvm/bin/clang  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_06496.dir/test_mpi.c.o -MF CMakeFiles/cmTC_06496.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_06496.dir/test_mpi.c.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8bSN2F/test_mpi.c
-        Linking C executable cmTC_06496
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06496.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_06496.dir/test_mpi.c.o -o cmTC_06496  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4j0qjM"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4j0qjM"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: " -fopenmp=libomp"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4j0qjM'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4ccb6/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4ccb6.dir/build.make CMakeFiles/cmTC_4ccb6.dir/build
-        Building CXX object CMakeFiles/cmTC_4ccb6.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_4ccb6.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_4ccb6.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_4ccb6.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4j0qjM/test_mpi.cpp
-        Linking CXX executable cmTC_4ccb6
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ccb6.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4ccb6.dir/test_mpi.cpp.o -o cmTC_4ccb6  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode MPICXX"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cjpIPH"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cjpIPH"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: " -fopenmp=libomp"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cjpIPH'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a68f2/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a68f2.dir/build.make CMakeFiles/cmTC_a68f2.dir/build
-        Building CXX object CMakeFiles/cmTC_a68f2.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_a68f2.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_a68f2.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_a68f2.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cjpIPH/test_mpi.cpp
-        Linking CXX executable cmTC_a68f2
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a68f2.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a68f2.dir/test_mpi.cpp.o -o cmTC_a68f2  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for C in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LuRmsV"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LuRmsV"
-    cmakeVariables:
-      CMAKE_C_FLAGS: " -fopenmp=libomp"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_C_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LuRmsV'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e5e05/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e5e05.dir/build.make CMakeFiles/cmTC_e5e05.dir/build
-        Building C object CMakeFiles/cmTC_e5e05.dir/test_mpi.c.o
-        /opt/homebrew/opt/llvm/bin/clang  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_e5e05.dir/test_mpi.c.o -MF CMakeFiles/cmTC_e5e05.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_e5e05.dir/test_mpi.c.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-LuRmsV/test_mpi.c
-        Linking C executable cmTC_e5e05
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5e05.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e5e05.dir/test_mpi.c.o -o cmTC_e5e05  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xm6MI"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xm6MI"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: " -fopenmp=libomp"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xm6MI'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0f95b/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0f95b.dir/build.make CMakeFiles/cmTC_0f95b.dir/build
-        Building CXX object CMakeFiles/cmTC_0f95b.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_0f95b.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_0f95b.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_0f95b.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xm6MI/test_mpi.cpp
-        Linking CXX executable cmTC_0f95b
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f95b.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0f95b.dir/test_mpi.cpp.o -o cmTC_0f95b  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
-      - "CMakeLists.txt:17 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode MPICXX"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6VhY8K"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6VhY8K"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: " -fopenmp=libomp"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: " "
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6VhY8K'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ee717/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ee717.dir/build.make CMakeFiles/cmTC_ee717.dir/build
-        Building CXX object CMakeFiles/cmTC_ee717.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_ee717.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_ee717.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_ee717.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6VhY8K/test_mpi.cpp
-        Linking CXX executable cmTC_ee717
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee717.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -fopenmp=libomp  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ee717.dir/test_mpi.cpp.o -o cmTC_ee717  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:5 (find_package)"
-    description: "The MPI test test_mpi for C in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ekAmpk"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ekAmpk"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_C_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ekAmpk'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0e6ae/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0e6ae.dir/build.make CMakeFiles/cmTC_0e6ae.dir/build
-        Building C object CMakeFiles/cmTC_0e6ae.dir/test_mpi.c.o
-        /opt/homebrew/opt/llvm/bin/clang  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_0e6ae.dir/test_mpi.c.o -MF CMakeFiles/cmTC_0e6ae.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_0e6ae.dir/test_mpi.c.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ekAmpk/test_mpi.c
-        Linking C executable cmTC_0e6ae
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e6ae.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0e6ae.dir/test_mpi.c.o -o cmTC_0e6ae  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:5 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FtIfSB"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FtIfSB"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FtIfSB'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_56682/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_56682.dir/build.make CMakeFiles/cmTC_56682.dir/build
-        Building CXX object CMakeFiles/cmTC_56682.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_56682.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_56682.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_56682.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-FtIfSB/test_mpi.cpp
-        Linking CXX executable cmTC_56682
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56682.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_56682.dir/test_mpi.cpp.o -o cmTC_56682  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
-      - "CMakeLists.txt:5 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode MPICXX"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4FtjIr"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4FtjIr"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4FtjIr'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bbafd/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bbafd.dir/build.make CMakeFiles/cmTC_bbafd.dir/build
-        Building CXX object CMakeFiles/cmTC_bbafd.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_bbafd.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_bbafd.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_bbafd.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4FtjIr/test_mpi.cpp
-        Linking CXX executable cmTC_bbafd
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbafd.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_bbafd.dir/test_mpi.cpp.o -o cmTC_bbafd  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
-      - "CMakeLists.txt:5 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode normal"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DIpJ3I"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DIpJ3I"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_normal"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DIpJ3I'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32c14/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_32c14.dir/build.make CMakeFiles/cmTC_32c14.dir/build
-        Building CXX object CMakeFiles/cmTC_32c14.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_32c14.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_32c14.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_32c14.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DIpJ3I/test_mpi.cpp
-        Linking CXX executable cmTC_32c14
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32c14.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_32c14.dir/test_mpi.cpp.o -o cmTC_32c14  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
-      - "CMakeLists.txt:5 (find_package)"
-    description: "The MPI test test_mpi for CXX in mode MPICXX"
-    directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-KsxhiO"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-KsxhiO"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
-    buildResult:
-      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-KsxhiO'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d6eb1/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d6eb1.dir/build.make CMakeFiles/cmTC_d6eb1.dir/build
-        Building CXX object CMakeFiles/cmTC_d6eb1.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_d6eb1.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_d6eb1.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_d6eb1.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-KsxhiO/test_mpi.cpp
-        Linking CXX executable cmTC_d6eb1
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6eb1.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d6eb1.dir/test_mpi.cpp.o -o cmTC_d6eb1  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
-        
-      exitCode: 0
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
       - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
       - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
       - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
       - "CMakeLists.txt:4 (find_package)"
     description: "The MPI test test_mpi for CXX in mode normal"
     directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OJTnOn"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OJTnOn"
+      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QVfU5V"
+      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QVfU5V"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1085,15 +153,15 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OJTnOn'
+        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QVfU5V'
         
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dbb12/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dbb12.dir/build.make CMakeFiles/cmTC_dbb12.dir/build
-        Building CXX object CMakeFiles/cmTC_dbb12.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_dbb12.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_dbb12.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_dbb12.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OJTnOn/test_mpi.cpp
-        Linking CXX executable cmTC_dbb12
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbb12.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dbb12.dir/test_mpi.cpp.o -o cmTC_dbb12  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e1980/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e1980.dir/build.make CMakeFiles/cmTC_e1980.dir/build
+        Building CXX object CMakeFiles/cmTC_e1980.dir/test_mpi.cpp.o
+        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_e1980.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_e1980.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_e1980.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QVfU5V/test_mpi.cpp
+        Linking CXX executable cmTC_e1980
+        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1980.dir/link.txt --verbose=1
+        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e1980.dir/test_mpi.cpp.o -o cmTC_e1980  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
         
       exitCode: 0
   -
@@ -1104,8 +172,8 @@ events:
       - "CMakeLists.txt:4 (find_package)"
     description: "The MPI test test_mpi for CXX in mode MPICXX"
     directories:
-      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pAJfcy"
-      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pAJfcy"
+      source: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Lk8i3a"
+      binary: "/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Lk8i3a"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1117,15 +185,15 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
       cached: true
       stdout: |
-        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pAJfcy'
+        Change Dir: '/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Lk8i3a'
         
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_67434/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_67434.dir/build.make CMakeFiles/cmTC_67434.dir/build
-        Building CXX object CMakeFiles/cmTC_67434.dir/test_mpi.cpp.o
-        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_67434.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_67434.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_67434.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pAJfcy/test_mpi.cpp
-        Linking CXX executable cmTC_67434
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67434.dir/link.txt --verbose=1
-        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_67434.dir/test_mpi.cpp.o -o cmTC_67434  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_653db/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_653db.dir/build.make CMakeFiles/cmTC_653db.dir/build
+        Building CXX object CMakeFiles/cmTC_653db.dir/test_mpi.cpp.o
+        /opt/homebrew/opt/llvm/bin/clang++  -isystem /opt/homebrew/Cellar/mpich/4.1.2/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_653db.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_653db.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_653db.dir/test_mpi.cpp.o -c /Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Lk8i3a/test_mpi.cpp
+        Linking CXX executable cmTC_653db
+        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_653db.dir/link.txt --verbose=1
+        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_653db.dir/test_mpi.cpp.o -o cmTC_653db  /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpicxx.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libmpi.dylib /opt/homebrew/Cellar/mpich/4.1.2/lib/libpmpi.dylib 
         
       exitCode: 0
 ...

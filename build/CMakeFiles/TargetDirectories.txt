@@ -1,3 +1,0 @@
-/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/build/CMakeFiles/monte_carlo_pi.dir
-/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/build/CMakeFiles/edit_cache.dir
-/Users/G/CLionProjects/CS-6220-HPC-Project-Monte-Carlo/build/CMakeFiles/rebuild_cache.dir
