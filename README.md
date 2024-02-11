@@ -2,9 +2,7 @@
 ### CS 6220 Course Project, co-contributors: Yunxiang Yan, Qidian Gao, Biwei Tang
 ### Core highlights:
 1. We accept configuation input of n value (the total points used to simulate &pi;) as well as interactive commands upon terminal.
-2. We calculated the run-time with different number of processors from 1~10 locally with Macbook Air M2 8+16+10, and for n = 106
-   , we plot a graph of run-time of the program vs. the number of processors for a
-   few chosen values of p.
+2. We calculated the run-time with different number of processors, and for n = 106, we plot a graph of run-time of the program vs. the number of processors for a few chosen values of p.
 
 ### Code logic: 
 
@@ -15,6 +13,7 @@ We achieved separative input using if-else statement:
 if (rank == 0) {
 if (argc == 2) {
 n = atoll(argv[1]);
+start_time = MPI_Wtime();
 } else {
 std::cout << "Enter the number of points: ";
 std::cin >> n;
