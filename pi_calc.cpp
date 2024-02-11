@@ -17,6 +17,7 @@ int main(int argc, char** argv) {
     if (rank == 0) {
         if (argc == 2) {
             n = atoll(argv[1]);
+            start_time = MPI_Wtime();
         } else {
             std::cout << "Enter the number of points: ";
             std::cin >> n;
